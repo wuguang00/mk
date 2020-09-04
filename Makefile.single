@@ -1,0 +1,23 @@
+# can you distinguish the codes below.
+# I should try it myself.
+incsha ?= 27 # this will define directly.
+sha = 48
+shs := 36
+
+all:
+	echo $(shs)
+	echo $(sha)
+	echo $(incsha)
+
+incsha ?= 88 # this will not work.
+sha:=28
+shs := 38
+
+allt:
+	echo $(shs)
+	echo $(sha)
+	echo $(incsha)
+
+shs := 39
+incsha ?= 99 # this will not work.
+sha = 29000
