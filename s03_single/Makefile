@@ -6,8 +6,8 @@ y := $(x) bar
 x := later
 
 all:
-	echo $(x) # x will be later.
-	echo $(y) # y will be foo bar
+	echo 'This is a rule for default'$(x) # x will be later.
+	echo 'This is a rule for default'$(y) # y will be foo bar
 
 
 m := $(n) moon
@@ -75,7 +75,7 @@ PHONY += FORCE
 FORCE:
 
 %:: FORCE
-	echo "S" $(MAKE)
+	@echo "Althrough ther is a rule for defautlt, but this one will be executed at first."
+	@echo "S" $(MAKE)
 
-
-
+.PHONY: $(PHONY)
