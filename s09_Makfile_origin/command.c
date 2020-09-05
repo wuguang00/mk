@@ -10,6 +10,6 @@
 #include"command.h"
 void command(void)
 {
-    printf("This is command.c used by makefiles.\t\tCOMMAND\n");
-    printf("#define TEST_NUM: %d\t\t\t\t\tCOMMAND\n\n", TEST_NUM);
+    printf("This is command.c used by makefiles.\t\tcommand\n");
+    printf("#define TEST_NUM: %d\t\t\t\tcommand\n\n", TEST_NUM);
 }

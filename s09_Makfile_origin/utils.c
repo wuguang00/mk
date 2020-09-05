@@ -9,5 +9,5 @@
 #include"defs.h"
 void utils(void)
 {
-    printf("This is utils.c used by makefiles.\t\tutils\n");
+    printf("This is utils.c used by makefiles.\t\tutils\n\n");
 }

@@ -13,7 +13,7 @@
 void display(void)
 {
     printf("This is display.c used by makefiles.\t\tdisplay\n");
-    printf("#define TEST_NUM: %d\t\t\t\t\tdisplay\n\n", TEST_NUM);
-    printf("#define TEST_COMMAND: 0x%x\t\t\t\t\tdisplay\n\n", TEST_COMMAND);
-    printf("#define TEST_BUFFER: 0x%x\t\t\t\t\tdisplay\n\n", TEST_BUFFER);
+    printf("#define TEST_NUM: %d\t\t\t\tdisplay\n", TEST_NUM);
+    printf("#define TEST_COMMAND: 0x%x\t\t\tdisplay\n", TEST_COMMAND);
+    printf("#define TEST_BUFFER: 0x%x\t\t\tdisplay\n\n", TEST_BUFFER);
 }

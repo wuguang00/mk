@@ -12,6 +12,6 @@
 void files(void)
 {
     printf("This is files.c used by makefiles.\t\tfiles\n");
-    printf("#define TEST_BUFFER: 0x%x\t\t\t\t\tfiles\n\n", TEST_BUFFER);
-    printf("#define TEST_COMMAND: 0x%x\t\t\t\t\tfiles\n\n", TEST_COMMAND);
+    printf("#define TEST_BUFFER: 0x%x\t\t\tfiles\n", TEST_BUFFER);
+    printf("#define TEST_COMMAND: 0x%x\t\t\tfiles\n\n", TEST_COMMAND);
 }

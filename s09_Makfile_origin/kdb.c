@@ -10,7 +10,7 @@
 #include"command.h"
 void kdb(void)
 {
-    printf("This is kdb.c used by makefiles.\t\tKDB\n");
-    printf("#define TEST_NUM: %d\t\t\t\t\tKDB", TEST_NUM);
-    printf("#define TEST_COMMAND: 0x%x\t\t\t\t\tKDB", TEST_COMMAND);
+    printf("This is kdb.c used by makefiles.\t\tkdb\n");
+    printf("#define TEST_NUM: 0x%x\t\t\t\tkdb\n", TEST_NUM);
+    printf("#define TEST_COMMAND: 0x%x\t\t\tkdb\n\n", TEST_COMMAND);
 }

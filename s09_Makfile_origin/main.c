@@ -18,7 +18,7 @@ extern void utils(void);
 
 int main(void)
 {
-    printf("This is main.c used by makefiles.\n");
+    printf("\nThis is main.c used by makefiles.\n");
     printf("#define TEST_NUM: %d\n\n", TEST_NUM);
 
 	insert();

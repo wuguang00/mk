@@ -11,5 +11,5 @@
 void search(void)
 {
     printf("This is search.c used by makefiles.\t\tsearch\n");
-    printf("#define TEST_BUFFER: 0x%x\t\t\t\t\tsearch\n\n", TEST_BUFFER);
+    printf("#define TEST_BUFFER: 0x%x\t\t\tsearch\n\n", TEST_BUFFER);
 }

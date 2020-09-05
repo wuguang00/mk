@@ -11,5 +11,5 @@
 void insert(void)
 {
     printf("This is insert.c used by makefiles.\t\tinsert\n");
-    printf("#define TEST_BUFFER: %d\t\t\t\t\tinsert\n\n", TEST_BUFFER);
+    printf("#define TEST_BUFFER: 0x%x\t\t\tinsert\n\n", TEST_BUFFER);
 }
