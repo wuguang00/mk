@@ -1,0 +1,94 @@
+# a special variable VPATH
+VPATH = src:../headers
+# VPATH is a path variable for the whole Makefile
+# vpath is a keyword in Makefile
+vpath <pattern> <diretories> # in order to offer <directories> for <pattern>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.PHONY: clean
+clean:
+    rm *.o temp
+# practice makes perfect.
+
+
+all: prog1 prog2 prog3
+.PHONY: all
+
+prog1: prog1.o utils.o
+    cc -o prog1 prog1.o utils.o
+
+prog2: prog2.o
+    cc -o prog2 prog2.o
+
+prog3: prog3.o
+    cc -o prog3 prog3.o
+
+
+.PHONY: cleanall cleanobj cleandiff
+    cleanall: cleanobj cleandiff
+    rm progam
+
+cleanobj:
+    rm *.o
+
+cleandiff:
+    rm *.diff
+
+
+# Many targets in makefiles
+bigoutput littleoutput: text.g
+    generate text.g -$(subst output,,$@) > $@
+
+# it looks like.
+bigoutput: text.g
+    generate text.g -big > bigoutput
+
+littleoutput: text.g
+    generate text.g -little > littleoutput
+
