@@ -1,4 +1,0 @@
-
-FORCE:
-%:: FORCE
-	echo AAAAA
