@@ -12,4 +12,4 @@ display.o insert.o search.o files.o: buffer.h
 
 .PHONY: clean
 clean:
-	rm edit.out main.o kdb.o command.o display.o insert.o search.o files.o utils.o
+	-rm edit.out $(objects)
