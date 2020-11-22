@@ -1,12 +1,9 @@
 # In top Makefile
-vmlinux:
-	scripts/link-vmlinux.sh $(vmlinux-deps)
-
-# In top Makefile
 vmlinux: scripts/link-vmlinux.sh $(vmlinux-deps)
 	+$(call if_changed,link-vmlinux)
+	echo $(vmlinux-deps)
 
-# Variable assignments
+# Variable assignments, if not defined, it will be empty with spaces.
 vmlinux-deps := $(KBUILD_LDS) $(KBUILD_VMLINUX_INIT) $(KBUILD_VMLINUX_MAIN) $(KBUILD_VMLINUX_LIBS)
 
 export KBUILD_VMLINUX_INIT := $(head-y) $(init-y)
@@ -33,7 +30,8 @@ virt-y          := $(patsubst %/, %/built-in.a, $(virt-y))
 # Setup the dependency. vmlinux-deps are all intermediate objects, vmlinux-dirs
 # are phony targets, so every time comes to this rule, the recipe of vmlinux-dirs
 # will be executed. Refer "4.6 Phony Targets" of `info make`
-$(sort $(vmlinux-deps)): $(vmlinux-dirs) ;
+$(sort $(vmlinux-deps)): $(vmlinux-dirs)
+	echo $@;
 
 
 
