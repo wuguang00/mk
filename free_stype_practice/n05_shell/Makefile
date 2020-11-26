@@ -14,5 +14,6 @@ test1:
 nullstring :=
 space := $(nullstring) # Comment sign caused the space.
 
-
+test2:
+	echo $$, aaaa
 
