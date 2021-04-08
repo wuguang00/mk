@@ -1,0 +1,31 @@
+kcon
+
+Kernel config
+
+# the tree of the files.
+hello
+hello.c
+include
+    -- config
+        arm.h
+        auto.conf
+        auto.conf.cmd
+        myprint.h
+        tristate.conf
+        x86.h
+    -- generated
+        autoconf.h
+Kconfig
+Makefile
+myprint.c
+myprint.h
+scripts
+    -- conf
+    -- mconf
+
+
+
+
+
+
+
